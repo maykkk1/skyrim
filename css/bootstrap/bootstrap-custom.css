@@ -1,0 +1,160 @@
+body {
+    background-image: url("../../images/bg/wp2225973.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+header {
+    position: relative;
+}
+
+button {
+    background-color: #94C5C5 !important;
+    color: black;
+}
+
+.btn {
+    background-color: #94C5C5 !important;
+    color: black;
+}
+
+:root {
+    --primary-color: #18232C;
+    --secondary-color: #5CA8C2;
+}
+
+.title {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+    text-shadow: 1px 2px black;
+    width: 100%;
+}
+
+.title h1{
+    font-size: 7rem;
+}
+
+.title p{
+    font-size: 2rem;
+    letter-spacing: 10px;
+}
+
+.carousel {
+    height: 100vh !important;
+    border-bottom: 2px solid black;
+}
+
+.carousel-inner, .carousel-item, .carousel-item img {
+    height: 100% !important;
+}
+
+#banner1 {
+    background-image: url("../../images/banner/skyrim1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+}
+
+#banner2 {
+    background-image: url("../../images/banner/skyrim2.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+#banner3 {
+    background-image: url("../../images/banner/skills.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+
+#posts {
+    margin: 30px 0;
+}
+
+#novosPosts > .card {
+    border: .5px solid rgba(255, 255, 255, 0.486);
+    background-color: #343a40c0 !important;
+    margin-bottom: 5px;
+}
+
+#novosPosts > article > .card-body > h5 {
+    color: var(--secondary-color);
+}
+
+#novosPosts > article > .card-body {
+    border-top: .1px solid rgba(255, 255, 255, 0.188);
+}
+
+#novosPosts > article > .card-header {
+    font-size: 12px;
+}
+
+#populares > .card {
+    background-color: var(--primary-color) !important;
+    border-radius: 0;
+}
+
+#populares > h2 {
+    background-color: var(--primary-color) !important;
+    margin: 0;
+    padding: 20px 0 20px 10px;
+    border-left: 3px solid var(--secondary-color);
+}
+
+footer {
+    background-color: rgb(31, 30, 30);
+    padding: 10px 0 0 0;
+}
+
+footer img {
+    width: 50px;
+}
+
+footer span {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 30px !important;
+}
+
+#cssHandler {
+    position: fixed;
+    background-color: white !important;
+    bottom: 10px;
+    padding: 10px;
+    border-radius: 100px;
+    right: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#cssHandler img {
+    width: 40px;
+}
+
+
+@media (max-width: 750px) {
+    #banner1 {
+        background-image: url("../../images/banner/mobile3.jpeg");
+        background-position: top;
+    }
+    #banner2 {
+        background-image: url("../../images/banner/mobile2.jpeg");
+        background-position: top;
+    }
+    #banner3 {
+        background-image: url("../../images/banner/mobile1.jpeg");
+        background-position: top;
+    }
+}
