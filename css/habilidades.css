@@ -15,6 +15,10 @@
     --secondary-color: #5CA8C2;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-image: url("../images/bg/themage.png");
     background-repeat: no-repeat;
@@ -40,7 +44,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 100px;
     font-size: 1.5rem;
     color: whitesmoke;
     text-shadow: 1px 1px 5px black;
@@ -83,6 +86,50 @@ caption {
 thead {
     background-color: #18232cff;
     color: white;
+}
+
+#populares {
+    margin: 20px 0;
+}
+
+#populares a {
+    background-color: #94C5C5 !important;
+    color: black;
+    font-size: 1rem;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+#populares > .card {
+    background-color: var(--primary-color) !important;
+    border-radius: 0;
+}
+
+#populares > h2 {
+    background-color: var(--primary-color) !important;
+    margin: 0;
+    padding: 20px 0 20px 10px;
+    border-left: 3px solid var(--secondary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 10px 0 0 0;
+}
+
+footer img {
+    width: 50px;
+}
+
+footer span {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 30px !important;
 }
 
 
