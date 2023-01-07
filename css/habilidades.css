@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap');
 
 * {
     margin: 0;
@@ -15,8 +16,73 @@
 }
 
 body {
-    background-image: url("../../images/bg/wp2225973.jpeg");
+    background-image: url("../images/bg/themage.png");
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
 }
+
+.botoes {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    background-color: rgba(0, 0, 0, 0.808);
+    padding: 20px 0;
+}
+
+.botoes button {
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid var(--primary-color);
+    width: 200px;
+    padding: 5px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    text-shadow: 1px 1px 5px black;
+    transition: 400ms;
+    font-family: 'MedievalSharp', cursive;
+}
+
+.botoes button:hover {
+    border-color: var(--secondary-color);
+}
+
+#mage {
+    background-image: url("../images/bg/themage.png");
+}
+
+#thief {
+    background-image: url("../images/bg/thethief.jpeg");
+}
+
+#warrior {
+    background-image: url("../images/bg/thewarrior.jpeg");
+}
+
+#habilidades {
+    margin-top: 20px;
+}
+
+table {
+    background-color: rgba(0, 0, 0, 0.625);
+    color: white !important;
+    border: none !important;
+    caption-side: top !important;
+}
+
+caption {
+    color: var(--secondary-color);
+    font-size: 1.5rem;
+}
+
+thead {
+    background-color: #18232cff;
+    color: white;
+}
+
+
