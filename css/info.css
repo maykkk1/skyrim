@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+:root {
+    --primary-color: #18232C;
+    --secondary-color: #5CA8C2;
+}
+
+body {
+    background-image: url("../../images/bg/wp2225973.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+#info {
+    background-color: #18232ced;
+    padding: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+figure img{
+    width: 100%;
+}
+
+h2 {
+    color: var(--secondary-color);
+    text-transform: capitalize;
+}
+
+h3 {
+    text-transform: capitalize;
+}
+
+p {
+    margin-bottom: 40px;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 10px 0 0 0;
+}
+
+footer img {
+    width: 50px;
+}
+
+footer span {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 30px !important;
+}

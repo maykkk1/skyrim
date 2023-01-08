@@ -31,7 +31,7 @@ body {
     display: flex;
     justify-content: center;
     gap: 5px;
-    background-color: rgba(0, 0, 0, 0.808);
+    background-color: rgba(0, 0, 0, 0.422);
     padding: 20px 0;
 }
 

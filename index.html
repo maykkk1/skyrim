@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -46,16 +46,16 @@
                             Raças
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Dunmer</a></li>
-                            <li><a class="dropdown-item" href="#">Altmer</a></li>
-                            <li><a class="dropdown-item" href="#">Bosmer</a></li>
-                            <li><a class="dropdown-item" href="#">Orc</a></li>
-                            <li><a class="dropdown-item" href="#">Khajiit</a></li>
-                            <li><a class="dropdown-item" href="#">Argoniano</a></li>
-                            <li><a class="dropdown-item" href="#">Imperial</a></li>
-                            <li><a class="dropdown-item" href="#">Nordico</a></li>
-                            <li><a class="dropdown-item" href="#">Redguard</a></li>
-                            <li><a class="dropdown-item" href="#">Bretão</a></li>
+                            <li><a class="dropdown-item" onclick="route('dunmer', 'race')" href="./sections/info/info.html">Dunmer</a></li>
+                            <li><a class="dropdown-item" onclick="route('altmer', 'race')" href="./sections/info/info.html">Altmer</a></li>
+                            <li><a class="dropdown-item" onclick="route('bosmer', 'race')" href="./sections/info/info.html">Bosmer</a></li>
+                            <li><a class="dropdown-item" onclick="route('orc', 'race')" href="./sections/info/info.html">Orc</a></li>
+                            <li><a class="dropdown-item" onclick="route('khajiit', 'race')" href="./sections/info/info.html">Khajiit</a></li>
+                            <li><a class="dropdown-item" onclick="route('argonian', 'race')" href="./sections/info/info.html">Argonian</a></li>
+                            <li><a class="dropdown-item" onclick="route('imperial', 'race')" href="./sections/info/info.html">Imperial</a></li>
+                            <li><a class="dropdown-item" onclick="route('nord', 'race')" href="./sections/info/info.html">Nord</a></li>
+                            <li><a class="dropdown-item" onclick="route('redguard', 'race')" href="./sections/info/info.html">Redguard</a></li>
+                            <li><a class="dropdown-item" onclick="route('breton', 'race')" href="./sections/info/info.html">Breton</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -64,14 +64,11 @@
                             Cidades
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Whiterun</a></li>
-                            <li><a class="dropdown-item" href="#">Windhelm</a></li>
-                            <li><a class="dropdown-item" href="#">Winterhold</a></li>
-                            <li><a class="dropdown-item" href="#">Solitude</a></li>
-                            <li><a class="dropdown-item" href="#">Riften</a></li>
-                            <li><a class="dropdown-item" href="#">Dawnstar</a></li>
-                            <li><a class="dropdown-item" href="#">Markarth</a></li>
-                            <li><a class="dropdown-item" href="#">Morthal</a></li>
+                            <li><a class="dropdown-item" onclick="route('whiterun', 'city')" href="./sections/info/info.html">Whiterun</a></li>
+                            <li><a class="dropdown-item" onclick="route('windhelm', 'city')" href="./sections/info/info.html">Windhelm</a></li>
+                            <li><a class="dropdown-item" onclick="route('winterhold', 'city')" href="./sections/info/info.html">Winterhold</a></li>
+                            <li><a class="dropdown-item" onclick="route('solitude', 'city')" href="./sections/info/info.html">Solitude</a></li>
+                            <li><a class="dropdown-item" onclick="route('riften', 'city')" href="./sections/info/info.html">Riften</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -80,10 +77,10 @@
                             Faccões
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Thieves Guild</a></li>
-                            <li><a class="dropdown-item" href="#">Dark Brotherhood</a></li>
-                            <li><a class="dropdown-item" href="#">College of Winterhold</a></li>
-                            <li><a class="dropdown-item" href="#">Companions</a></li>
+                            <li><a class="dropdown-item" onclick="route('thieves guild', 'faction')" href="./sections/info/info.html">Thieves Guild</a></li>
+                            <li><a class="dropdown-item" onclick="route('dark brotherhood', 'faction')" href="./sections/info/info.html">Dark Brotherhood</a></li>
+                            <li><a class="dropdown-item" onclick="route('college of winterhold', 'faction')" href="./sections/info/info.html">College of Winterhold</a></li>
+                            <li><a class="dropdown-item" onclick="route('companions', 'faction')" href="./sections/info/info.html">Companions</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
@@ -192,6 +189,7 @@
         </div>
     </footer>
 
+    <script src="./js/shared/navHandler.js"></script>
     <script src="./js/cssHandler.js"></script>
     <script id="script" src="./js/bootstrap/bootstrap.min.js"></script>
     <script src="./js/script.js"></script>
