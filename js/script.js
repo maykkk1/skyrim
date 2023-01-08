@@ -135,9 +135,9 @@ const createPopularPost = (post) => {
 const cssHandler = document.getElementById('cssHandler');
 const css1 = document.getElementById('css1');
 const css2 = document.getElementById('css2');
-const cssFlex = 'http://127.0.0.1:5500/css/index.css';
-const cssBootstrap = 'http://127.0.0.1:5500/css/bootstrap/bootstrap.min.css';
-const cssBootstrapCustom = 'http://127.0.0.1:5500/css/bootstrap/bootstrap-custom.css';
+const cssFlex = `${window.location.origin}/css/index.css`;
+const cssBootstrap = `${window.location.origin}/css/bootstrap/bootstrap.min.css`;
+const cssBootstrapCustom = `${window.location.origin}/css/bootstrap/bootstrap-custom.css`;
 
 cssHandler.addEventListener('click', () => {
     changeCss();
