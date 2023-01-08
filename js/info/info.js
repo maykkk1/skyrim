@@ -409,7 +409,7 @@ const factions = [
     {
         name: 'college of winterhold',
         lore: `The College of Winterhold is a guild of mages centered in Skyrim. It is a faction of magic-users similar to the Mages Guild of Cyrodiil and Morrowind. When the Dragonborn appears, the current Arch-Mage is Savos Aren, with Mirabelle Ervine serving as the Master Wizard. During the faction's main quest, Tolfdir replaces her as Master Wizard. The College is located in the northern section of the city of Winterhold, in northern Skyrim. Instructors of each magical discipline reside within, offering training and various magical wares to members.`,
-        history: `Winterhold was once a great, powerful and wealthy hold,[1][2] and its relationship with the College of Winterhold was good.[3]
+        history: `Winterhold was once a great, powerful and wealthy hold, and its relationship with the College of Winterhold was good.
 
         In 4E 122, an unprecedented, cataclysmic event struck Winterhold and most of the areas along the coastline. A massive storm came in from the Sea of Ghosts, which brought huge waves which crashed into Winterhold. Most of the city fell into the sea, leaving the city in ruins both physically in terms of the destruction of the city itself, and the emotional and psychological damage to Winterhold's people. This event would eventually be referred to as "The Great Collapse." The disaster left Winterhold in ruins, and some had said that things would never be the same again, including Winterhold's relationship with the College. The people of Winterhold would eventually begin to blame the College for causing the Great Collapse. Winterhold has yet to recover from the Great Collapse.`,
         imgUrl: '../../images/factions/college.webp'

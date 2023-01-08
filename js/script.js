@@ -1,4 +1,7 @@
-carouselCounter = 1;
+import { posts } from "../js/shared/posts.js"
+import { PostRoute } from "../js/shared/postHandler.js"
+
+let carouselCounter = 1;
 const racasDropdown = document.getElementsByName('racas')[0];
 const cidadesDropdown = document.getElementsByName('cidades')[0];
 const faccoesDropdown = document.getElementsByName('faccoes')[0];
@@ -59,3 +62,79 @@ const navHandler = () => {
     ? nav.classList.remove('open')
     : nav.classList.add('open')
 }
+
+const renderPosts = () => {
+    const container = document.getElementById('novosPosts');
+    container.innerHTML = "";
+    posts.forEach(post => {
+        container.appendChild(createPost(post));
+    });
+}
+
+const createPost = (post) => {
+    const article = document.createElement('article');
+    article.classList.add('card');
+    article.classList.add('bg-dark');
+    article.classList.add('col-12');
+    const header = document.createElement('h5');
+    header.classList.add('card-header');
+    header.innerHTML = post.author
+    article.appendChild(header);
+    const body = document.createElement('div');
+    body.classList.add('card-body');
+    const title = document.createElement('h5');
+    title.classList.add('card-title');
+    title.innerHTML = post.title
+    body.appendChild(title);
+    const text = document.createElement('p');
+    text.classList.add('card-text');
+    text.innerHTML = post.text[0];
+    body.appendChild(text);
+    const button = document.createElement('button');
+    button.classList.add('btn');
+    button.innerHTML = 'Read more';
+    button.onclick = () => PostRoute(post.id);
+    body.appendChild(button);
+    article.appendChild(body);
+    return article;
+}
+
+const renderPopularPosts = () => {
+    const container = document.getElementById('populares');
+    container.innerHTML = "";
+    const title = document.createElement('h3');
+    title.innerHTML = 'Popular';
+    container.appendChild(title);
+    posts.forEach(post => {
+        container.appendChild(createPopularPost(post));
+    });
+}
+
+const createPopularPost = (post) => {
+    const article = document.createElement('article');
+    article.classList.add('card');
+    const body = document.createElement('div');
+    body.classList.add('card-body');
+    const title = document.createElement('h5');
+    title.classList.add('card-title');
+    title.innerHTML = post.title;
+    body.appendChild(title);
+    const text = document.createElement('p');
+    text.classList.add('card-text');
+    text.innerHTML = post.resume;
+    body.appendChild(text);
+    const button = document.createElement('button');
+    button.classList.add('btn');
+    button.innerHTML = 'Read more';
+    button.onclick = () => PostRoute(post.id);
+    body.appendChild(button);
+    article.appendChild(body);
+    return article;
+}
+
+
+
+window.addEventListener('load', () =>{
+    renderPosts();
+    renderPopularPosts();
+});

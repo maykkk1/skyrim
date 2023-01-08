@@ -101,7 +101,7 @@ button {
     border-radius: 0;
 }
 
-#populares > h2 {
+#populares > h3 {
     background-color: var(--primary-color) !important;
     margin: 0;
     padding: 20px 0 20px 10px;
