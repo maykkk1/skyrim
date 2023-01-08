@@ -13,7 +13,7 @@ cssHandler.addEventListener('click', () => {
 const changeCss = () => {
     if(css1.href == cssBootstrap) {
         css1.href = cssFlex;
-        css2.href = '';
+        css2.href = cssFlex;
     } else {
         css1.href = cssBootstrap;
         css2.href = cssBootstrapCustom;

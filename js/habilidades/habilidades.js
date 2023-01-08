@@ -1,3 +1,6 @@
+import { posts } from "../../js/shared/posts.js"
+import { PostRoute } from "../../js/shared/postHandler.js";
+
 const mageBtn = document.getElementById('mage');
 const thiefBtn = document.getElementById('thief');
 const warriorBtn = document.getElementById('warrior');
@@ -1058,4 +1061,41 @@ const gerarTabelas = (habilidades) => {
     })
 }
 
-gerarTabelas(magePerks);
+const renderPopularPosts = () => {
+    const container = document.getElementById('populares');
+    container.innerHTML = "";
+    const title = document.createElement('h3');
+    title.innerHTML = 'Popular';
+    container.appendChild(title);
+    posts.forEach(post => {
+        container.appendChild(createPopularPost(post));
+    });
+}
+
+const createPopularPost = (post) => {
+    const article = document.createElement('article');
+    article.classList.add('card');
+    const body = document.createElement('div');
+    body.classList.add('card-body');
+    const title = document.createElement('h5');
+    title.classList.add('card-title');
+    title.innerHTML = post.title;
+    body.appendChild(title);
+    const text = document.createElement('p');
+    text.classList.add('card-text');
+    text.innerHTML = post.resume;
+    body.appendChild(text);
+    const button = document.createElement('button');
+    button.classList.add('btn');
+    button.innerHTML = 'Read more';
+    button.onclick = () => PostRoute(post.id);
+    body.appendChild(button);
+    article.appendChild(body);
+    return article;
+}
+
+
+window.addEventListener('load', () =>{
+    gerarTabelas(magePerks);
+    renderPopularPosts();
+});
