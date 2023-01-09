@@ -1,5 +1,6 @@
 import { posts } from "../js/shared/posts.js"
 import { PostRoute } from "../js/shared/postHandler.js"
+console.log('abri')
 
 let carouselCounter = 1;
 const racasDropdown = document.getElementsByName('racas')[0];

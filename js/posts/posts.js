@@ -1,6 +1,8 @@
 import { posts } from "../../js/shared/posts.js"
 import { PostRoute } from "../../js/shared/postHandler.js"
 
+const form = document.getElementById('form');
+
 const renderPost = () => {
     const container = document.getElementById('post');
     container.innerHTML = '';
@@ -63,6 +65,12 @@ const createPopularPost = (post) => {
     article.appendChild(body);
     return article;
 }
+
+form.addEventListener('submit', (e) => {
+    const email = document.getElementById('email');
+    const msg = `Thank you for Subscribing \n A confirmation email has been sent to ${email.value}`
+    window.alert(msg);
+});
 
 window.addEventListener('load', () =>{
     renderPost();

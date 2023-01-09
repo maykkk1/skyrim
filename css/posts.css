@@ -14,6 +14,10 @@
     --secondary-color: #5CA8C2;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 body {
     background-image: url("../../images/bg/wp2225973.jpeg");
     background-repeat: no-repeat;
@@ -72,4 +76,58 @@ body {
     font-size: 1rem;
     padding: 5px 10px;
     cursor: pointer;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 10px 0 0 0;
+}
+
+footer img {
+    width: 50px;
+}
+
+footer span {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 30px !important;
+}
+
+
+form {
+    padding: 50px 50px !important;
+    background-color: #18232ced;
+}
+
+legend {
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+#name {
+    margin-bottom: 25px;
+}
+
+#submit {
+    width: 100% !important;
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#policyLabel {
+    font-style: italic;
+    font-size: 14px;
+}
+
+.newsletter {
+    margin-bottom: 30px;
 }
